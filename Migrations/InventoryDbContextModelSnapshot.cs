@@ -44,7 +44,7 @@ namespace InventoryManagementSystem.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Customers", (string)null);
                 });
 
             modelBuilder.Entity("InventoryManagementSystem.Models.Order", b =>
@@ -65,7 +65,7 @@ namespace InventoryManagementSystem.Migrations
 
                     b.HasIndex("CustomerId");
 
-                    b.ToTable("Orders");
+                    b.ToTable("Orders", (string)null);
                 });
 
             modelBuilder.Entity("InventoryManagementSystem.Models.OrderItem", b =>
@@ -91,7 +91,7 @@ namespace InventoryManagementSystem.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("OrderItems");
+                    b.ToTable("OrderItems", (string)null);
                 });
 
             modelBuilder.Entity("InventoryManagementSystem.Models.Product", b =>
@@ -118,7 +118,7 @@ namespace InventoryManagementSystem.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Products");
+                    b.ToTable("Products", (string)null);
                 });
 
             modelBuilder.Entity("InventoryManagementSystem.Models.Order", b =>
